@@ -13,13 +13,13 @@ function pro_101_default_users_install() {
     'pass' => 'pass',
     'mail' => 'client1@pearance.com',
     'status' => 1,
-    // 'timezone' => $default_timezone,
+    'timezone' => $default_timezone,
     'init' => 'client1@pearance.com',
     'roles' => array('96220023' => 'professional'),
     'field_first_name' => array($language => array(0 => array('value' => 'Jane',),),),
     'field_last_name' => array($language => array(0 => array('value' => 'Doe',),),),
     'field_title' => array($language => array(0 => array('value' => 'Attorney at Law',),),),
-    'admin_select' => array('default_value' => 'admin_select',),
+    'admin_select' => array('default_value' => 'toolbar',),
     'field_pro_bio' => array($language => array(0 => array('value' => '
     <h2>Heading</h2>
     <p>
@@ -42,13 +42,13 @@ function pro_101_default_users_install() {
     'pass' => 'pass',
     'mail' => 'client2@pearance.com',
     'status' => 1,
-    // 'timezone' => $default_timezone,
+    'timezone' => $default_timezone,
     'init' => 'client2@pearance.com',
     'roles' => array('96220023' => 'professional'),
     'field_first_name' => array($language => array(0 => array('value' => 'John',),),),
     'field_last_name' => array($language => array(0 => array('value' => 'Doe',),),),
     'field_title' => array($language => array(0 => array('value' => 'Attorney at Law',),),),
-    'admin_select' => array('default_value' => 'admin_menu',),
+    'admin_select' => array('default_value' => 'toolbar',),
     'field_pro_bio' => array($language => array(0 => array('value' => '
     <h2>Heading</h2>
     <p>
