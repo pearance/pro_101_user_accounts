@@ -18,6 +18,20 @@ function pro_101_default_users_install() {
     'roles' => array('96220023' => 'professional'),
     'field_first_name' => array($language => array(0 => array('value' => 'Jane',),),),
     'field_last_name' => array($language => array(0 => array('value' => 'Doe',),),),
+    'field_title' => array($language => array(0 => array('value' => 'Attorney at Law',),),),
+    'field_pro_bio' => array($language => array(0 => array('value' => '
+    <h2>Heading</h2>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est
+    laborum.
+    </p>
+    ',),),),
+    'admin_select' => array('default_value' => 'toolbar',),
   );
   $new_user = user_save($account1, $newUserData1);
 
@@ -33,6 +47,19 @@ function pro_101_default_users_install() {
     'roles' => array('96220023' => 'professional'),
     'field_first_name' => array($language => array(0 => array('value' => 'John',),),),
     'field_last_name' => array($language => array(0 => array('value' => 'Doe',),),),
+    'field_title' => array($language => array(0 => array('value' => 'Attorney at Law',),),),
+    'field_pro_bio' => array($language => array(0 => array('value' => '
+    <h2>Heading</h2>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est
+    laborum.
+    </p>
+    ',),),),
   );
   $new_user = user_save($account2, $newUserData2);
 }
