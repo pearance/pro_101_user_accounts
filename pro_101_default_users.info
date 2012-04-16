@@ -1,7 +1,7 @@
 name = "Pro 101 Default Users"
 description = "A couple of pre-configured user accounts."
 core = "7.x"
-package = "Content"
+package = "Pro 101 Content (L)"
 version = "7.x-1.0"
 project = "pro_101_default_users"
 dependencies[] = "ctools"
