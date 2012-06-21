@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Pro 101 Default Users feature.
- */
-
-include_once('pro_101_default_users.features.inc');

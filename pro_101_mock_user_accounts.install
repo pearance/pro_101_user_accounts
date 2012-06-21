@@ -1,7 +1,7 @@
 
 <?php
 // http://davidsonj.com/blog/saving-fields-usersave
-function pro_101_default_users_install() {
+function pro_101_mock_user_accounts_install() {
   global $user;
   $language = ($user->language) ? $user->language : 'und';
   $default_timezone = variable_get('date_default_timezone', '');
