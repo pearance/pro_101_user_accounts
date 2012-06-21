@@ -1,5 +1,5 @@
 name = "Pro 101 Mock User Accounts"
-description = "A couple of user accounts of various roles."
+description = "Some mock user accounts of various roles."
 core = "7.x"
 package = "Pro 101 Support (L)"
 version = "7.x-1.0"
