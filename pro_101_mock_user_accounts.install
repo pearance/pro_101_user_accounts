@@ -9,12 +9,12 @@ function pro_101_mock_user_accounts_install() {
   $account1 = new stdClass();
   $account1->is_new = true;
   $newUserData1 = array(
-    'name' => 'client1',
+    'name' => 'professional1',
     'pass' => 'pass',
-    'mail' => 'client1@pearance.com',
+    'mail' => 'professional1@pearance.com',
     'status' => 1,
     'timezone' => $default_timezone,
-    'init' => 'client1@pearance.com',
+    'init' => 'professional1@pearance.com',
     'roles' => array('96220023' => 'professional'),
     'field_first_name' => array($language => array(0 => array('value' => 'Jane',),),),
     'field_last_name' => array($language => array(0 => array('value' => 'Doe',),),),
@@ -43,12 +43,12 @@ function pro_101_mock_user_accounts_install() {
   $account2 = new stdClass();
   $account2->is_new = true;
   $newUserData2 = array(
-    'name' => 'client2',
+    'name' => 'professional2',
     'pass' => 'pass',
-    'mail' => 'client2@pearance.com',
+    'mail' => 'professional2@pearance.com',
     'status' => 1,
     'timezone' => $default_timezone,
-    'init' => 'client2@pearance.com',
+    'init' => 'professional2@pearance.com',
     'roles' => array('96220023' => 'professional'),
     'field_first_name' => array($language => array(0 => array('value' => 'John',),),),
     'field_last_name' => array($language => array(0 => array('value' => 'Doe',),),),
@@ -73,4 +73,38 @@ function pro_101_mock_user_accounts_install() {
     ',),),),
   );
   $new_user = user_save($account2, $newUserData2);
+
+  $account3 = new stdClass();
+  $account3->is_new = true;
+  $newUserData3 = array(
+    'name' => 'assistant',
+    'pass' => 'pass',
+    'mail' => 'assistant@pearance.com',
+    'status' => 1,
+    'timezone' => $default_timezone,
+    'init' => 'assistant@pearance.com',
+    'roles' => array('8998634' => 'assistant'),
+    'field_first_name' => array($language => array(0 => array('value' => 'Mary',),),),
+    'field_last_name' => array($language => array(0 => array('value' => 'Major',),),),
+    'field_title' => array($language => array(0 => array('value' => 'Paralegal',),),),
+    'field_pro_bio' => array($language => array(0 => array('value' => '
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est
+    laborum.
+    ',),),),
+    'field_bio_summary' => array($language => array(0 => array('value' => '
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+      non proident, sunt in culpa qui officia deserunt mollit anim id est
+      laborum.
+    ',),),),
+  );
+  $new_user = user_save($account3, $newUserData3);
 }
