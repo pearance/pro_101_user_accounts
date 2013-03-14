@@ -19,95 +19,88 @@ function pro_101_mock_user_accounts_install() {
 		'field_last_name' => array($language => array(0 => array('value' => 'Doe',),),),
 		'field_title' => array($language => array(0 => array('value' => 'Attorney at Law',),),),
 		'field_specialties' => array($language => array(0 => array('#markup' => 'Specialty-1',),),),
-		'field_linkedin' => array($language => array(0 => array('value' => 'http://linkedin.com',),),),
-		'field_facebook' => array($language => array(0 => array('value' => 'http://facebook.com',),),),
-		'field_twitter' => array($language => array(0 => array('value' => 'http://twitter.com',),),),
-		'field_google_plus' => array($language => array(0 => array('value' => 'http://plus.google.com',),),),
-		'field_awards_organizations' => array($language => array(0 => array('value' => 'yada yada',),),),
+		'field_linkedin' => array($language => array(0 => array('url' => 'http://linkedin.com',),),),
+		'field_facebook' => array($language => array(0 => array('url' => 'http://facebook.com',),),),
+		'field_twitter' => array($language => array(0 => array('url' => 'http://twitter.com',),),),
+		'field_google_plus' => array($language => array(0 => array('url' => 'http://plus.google.com',),),),
+		'field_awards_organizations' => array($language =>
+			array(0 => array('value' => 'yada yada',),),
+			array(1 => array('value' => 'yo yo',),),
+		,),
 		'field_office' => array($language => array(0 => array('value' => '123 Main St.<br />New City ST 123456',),),),
-		'field_pro_bio' => array($language => array(0 => array('value' => '
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-			non proident, sunt in culpa qui officia deserunt mollit anim id est
-			laborum.
-		',),),),
 		'field_pro_bio' => array($language => array(0 => array('summary' => '
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-			minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis
-			nostrud exercitation.</p>
+			<p>yo</p>
+		',),),),
+		'field_pro_bio' => array($language => array(0 => array('value' => '
+			<p>yo</p>
 		',),),),
 	);
 	$new_user = user_save($account1, $newUserData1);
 
-	$account2 = new stdClass();
-	$account2->is_new = true;
-	$newUserData2 = array(
-		'name' => 'professional2',
-		'pass' => 'pass',
-		'mail' => 'professional2@pearance.com',
-		'status' => 1,
-		'timezone' => $default_timezone,
-		'init' => 'professional2@pearance.com',
-		'roles' => array('96220023' => 'professional'),
-		'field_first_name' => array($language => array(0 => array('value' => 'John',),),),
-		'field_last_name' => array($language => array(0 => array('value' => 'Doe',),),),
-		'field_title' => array($language => array(0 => array('value' => 'Attorney at Law',),),),
-		'field_pro_bio' => array($language => array(0 => array('value' => '
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-			non proident, sunt in culpa qui officia deserunt mollit anim id est
-			laborum.
-		',),),),
-		'field_pro_bio' => array($language => array(0 => array('summary' => '
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-			minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis
-			nostrud exercitation.</p>
-		',),),),
-	);
-	$new_user = user_save($account2, $newUserData2);
 
-	$account3 = new stdClass();
-	$account3->is_new = true;
-	$newUserData3 = array(
-		'name' => 'assistant',
-		'pass' => 'pass',
-		'mail' => 'assistant@pearance.com',
-		'status' => 1,
-		'timezone' => $default_timezone,
-		'init' => 'assistant@pearance.com',
-		'roles' => array('8998634' => 'assistant'),
-		'field_first_name' => array($language => array(0 => array('value' => 'Mary',),),),
-		'field_last_name' => array($language => array(0 => array('value' => 'Major',),),),
-		'field_title' => array($language => array(0 => array('value' => 'Paralegal',),),),
-		'field_pro_bio' => array($language => array(0 => array('value' => '
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-			non proident, sunt in culpa qui officia deserunt mollit anim id est
-			laborum.
-		',),),),
-		'field_pro_bio' => array($language => array(0 => array('summary' => '
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-			minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis
-			nostrud exercitation.</p>
-		',),),),
-	);
-	$new_user = user_save($account3, $newUserData3);
+	// $account2 = new stdClass();
+	// $account2->is_new = true;
+	// $newUserData2 = array(
+	// 	'name' => 'professional2',
+	// 	'pass' => 'pass',
+	// 	'mail' => 'professional2@pearance.com',
+	// 	'status' => 1,
+	// 	'timezone' => $default_timezone,
+	// 	'init' => 'professional2@pearance.com',
+	// 	'roles' => array('96220023' => 'professional'),
+	// 	'field_first_name' => array($language => array(0 => array('value' => 'John',),),),
+	// 	'field_last_name' => array($language => array(0 => array('value' => 'Doe',),),),
+	// 	'field_title' => array($language => array(0 => array('value' => 'Attorney at Law',),),),
+	// 	'field_pro_bio' => array($language => array(0 => array('value' => '
+	// 		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	// 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	// 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	// 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	// 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+	// 		non proident, sunt in culpa qui officia deserunt mollit anim id est
+	// 		laborum.
+	// 	',),),),
+	// 	'field_pro_bio' => array($language => array(0 => array('summary' => '
+	// 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	// 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	// 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	// 		consequat. tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+	// 		minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis
+	// 		nostrud exercitation.</p>
+	// 	',),),),
+	// );
+	// $new_user = user_save($account2, $newUserData2);
+
+	// $account3 = new stdClass();
+	// $account3->is_new = true;
+	// $newUserData3 = array(
+	// 	'name' => 'assistant',
+	// 	'pass' => 'pass',
+	// 	'mail' => 'assistant@pearance.com',
+	// 	'status' => 1,
+	// 	'timezone' => $default_timezone,
+	// 	'init' => 'assistant@pearance.com',
+	// 	'roles' => array('8998634' => 'assistant'),
+	// 	'field_first_name' => array($language => array(0 => array('value' => 'Mary',),),),
+	// 	'field_last_name' => array($language => array(0 => array('value' => 'Major',),),),
+	// 	'field_title' => array($language => array(0 => array('value' => 'Paralegal',),),),
+	// 	'field_pro_bio' => array($language => array(0 => array('value' => '
+	// 		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	// 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	// 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	// 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	// 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+	// 		non proident, sunt in culpa qui officia deserunt mollit anim id est
+	// 		laborum.
+	// 	',),),),
+	// 	'field_pro_bio' => array($language => array(0 => array('summary' => '
+	// 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	// 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	// 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	// 		consequat. tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+	// 		minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis
+	// 		nostrud exercitation.</p>
+	// 	',),),),
+	// );
+	// $new_user = user_save($account3, $newUserData3);
 }
