@@ -18,6 +18,13 @@ function pro_101_mock_user_accounts_install() {
 		'field_first_name' => array($language => array(0 => array('value' => 'Jane',),),),
 		'field_last_name' => array($language => array(0 => array('value' => 'Doe',),),),
 		'field_title' => array($language => array(0 => array('value' => 'Attorney at Law',),),),
+		'field_specialties' => array($language => array(0 => array('#markup' => 'Specialty-1',),),),
+		'field_linkedin' => array($language => array(0 => array('value' => 'http://linkedin.com',),),),
+		'field_facebook' => array($language => array(0 => array('value' => 'http://facebook.com',),),),
+		'field_twitter' => array($language => array(0 => array('value' => 'http://twitter.com',),),),
+		'field_google_plus' => array($language => array(0 => array('value' => 'http://plus.google.com',),),),
+		'field_awards_organizations' => array($language => array(0 => array('value' => 'yada yada',),),),
+		'field_office' => array($language => array(0 => array('value' => '123 Main St.<br />New City ST 123456',),),),
 		'field_pro_bio' => array($language => array(0 => array('value' => '
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
