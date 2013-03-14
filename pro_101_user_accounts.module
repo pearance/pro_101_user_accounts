@@ -4,4 +4,4 @@
  * Code for the Pro 101 Mock User Accounts feature.
  */
 
-include_once('pro_101_mock_user_accounts.features.inc');
+include_once('pro_101_user_accounts.features.inc');
